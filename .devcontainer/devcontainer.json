@@ -1,0 +1,7 @@
+{
+  "name": "xfce-rdp-codespace",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "postStartCommand": "sudo service dbus start; sudo service xrdp start",
+  "forwardPorts": [3389]
+}
